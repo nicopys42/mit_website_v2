@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/mit/logo4.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Course</a></li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Facility</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">Libary Facility</a>
+								<a class="dropdown-item" href="blog-single.html">Internet Facility</a>
+                                <a class="dropdown-item" href="blog-single.html">Hostel Facility</a>
+                                <a class="dropdown-item" href="blog-single.html">Language Lab</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+						<li class="nav-item"><a class="nav-link" href="pricing.html">Examination</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Gallery</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Sign In</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Courses</h1>
+			
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                
+            
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/mit/civil.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Civil Engineering</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>If you study civil engineering at undergraduate level, you’ll learn to apply mathematics and scientific knowledge (particularly physics) to real-life situations and problems that arise from creating and maintaining structures, taking into account environmental, financial, legal and ethical considerations. </p>
+								<p>At its core, civil engineering is a combination of many scientific specialisms, including mechanics, hydraulics, geotechnics (using knowledge of the earth’s crust to solve construction problems), materials science and statistical analysis. As such, study of these foundational elements will feature heavily in the early years of civil engineering degrees.</p>
+								<p>As well as the more scientific side, those who study civil engineering will get to develop their design skills, particularly computer-aided design. Project work is central to the subject, meaning that in the latter years of your degree you will be able to complete your own design projects individually or within a team.</p>
+								<p>Undergraduate civil engineering degrees will typically be four years in length and will feature a mixture of lectures and lab work. There will also be an emphasis on working within a team, as this is considered a key skill for anyone pursuing civil engineering careers.</p>
+								<p>Those who study civil engineering may also have opportunities to participate in field trips and complete industry placements, either as a ‘year in industry’ or for shorter periods.</p>
+							</div>
+							
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 400 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 10 Professors</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/mit/cse.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Computer Engineering</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p>Computer Engineering involves the design and development of systems based on computers and complex digital logic devices. These systems find use in such diverse tasks as computation, communication, entertainment, information processing, artificial intelligence, and control. Computer engineers will be very much involved with the “Information Highway.”</p>
+								<p>A computer engineer, equipped with a broad background in electrical engineering and computer science, will be entering an exciting and rapidly growing profession with unlimited opportunities in industry, government, and education. Many of our students have already participated in that world through internships. Some examples of internship placements are: Engineering Intern, AT&T Computer; Engineering Intern, IBM Corporation; Computer Engineering Intern, Computer Science Corporation; Computer Science Engineer Intern, Intel Corporation; and Engineering Technician, Mitre Corporation.</p>
+								<p>Computer Engineering graduates are equipped for careers as engineers, electrical designers, electrical engineers, design and applications engineers, test engineers, power systems engineers, and product engineers.</p>
+								<p>Career fields for computer engineers include computer-aided design, computer-aided manufacturing, hardware design, software design, integrated circuit design.</p>
+							</div>
+							
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 310 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Professors</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->	
+            </div><!-- end row -->
+			
+			<hr class="hr3"> 
+			
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/mit/ee.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Electrical Engineering</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Electrical Engineering is that branch of Engineering that deals with the study of the application of electricity, electronics and electromagnetism. Trained electrical engineers to design electric circuits and equipment. They work on large power plants as well as small hardware companies which include designing, manufacturing and operating power plants, industrial machinery, electrical motors, computer chips and ignition systems for automobiles, aircraft, space crafts and all kinds of engines. </p>
+								<p>Electrical Engineering is spread across a range of specialities such as acoustics, speech, signal processing electromagnetic compatibility, automobiles to vehicular technology, geoscience and remote sensing, laser and electro-optics, robotics, ultra-sonic, ferroelectrics and frequency control.</p>
+								<p>A qualified electrical engineer has the option to choose his/her line of work from a range of areas like computers, cell phones, electronic gadgets, radars, navigation systems, power plants, etc.</p>
+							</div>
+							
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 200 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 9 Professors</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+				<div class="col-lg-6 col-md-6 col-12">
+                   <div class="course-item">
+						<div class="image-blog">
+							<img src="images/mit/me.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Mechanical Engineering</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Mechanical engineering is the study of physical machines that may involve force and movement. It is an engineering branch that combines engineering physics and mathematics principles with materials science, to design, analyze, manufacture, and maintain mechanical systems.[1] It is one of the oldest and broadest of the engineering branches. </p>
+								<p>Mechanical engineering requires an understanding of core areas including mechanics, dynamics, thermodynamics, materials science, design, structural analysis, and electricity. In addition to these core principles, mechanical engineers use tools such as computer-aided design (CAD), computer-aided manufacturing (CAM), and product lifecycle management to design and analyze manufacturing plants, industrial equipment and machinery, heating and cooling systems, transport systems, aircraft, watercraft, robotics, medical devices, weapons, and others.</p>
+								<p>In India, to become an engineer, one needs to have an engineering degree like a B.Tech or B.E, have a diploma in engineering, or by completing a course in an engineering trade like fitter from the Industrial Training Institute (ITIs) to receive a "ITI Trade Certificate" and also pass the All India Trade Test (AITT) with an engineering trade conducted by the National Council of Vocational Training (NCVT) by which one is awarded a "National Trade Certificate".</p>
+							</div>
+							
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 200 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 4 Professors</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+			</div><!-- end row -->
+			
+			<hr class="hr3"> 
+			
+            <div class="row"> 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/mit//ece.jpg" alt="" class="img-fluid">
+						</div>		
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Electronics and Communications Engineering</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Electronics and Communications Engineering (ECE) involves researching, designing, developing, and testing of electronic equipment used in various systems. Electronics and Communications engineers also conceptualize and oversee the manufacturing of communications and broadcast systems.</p>
+								<p>This stream of engineering deals with analog transmission, basic electronics, microprocessors, solid-state devices, digital and analog communication, analog integrated circuits, microwave engineering, satellite communication, antennae, and wave progression. It also deals with the manufacturing of electronic devices, circuits, and communications equipment.</p>
+								<p>The future of technology advancements is likely to depend on the developments in the electronics and communication field. Electronics and communication are the two primary pillars of our society these days. In the coming years, the trend will continue, and ECE will eventually emerge as one of the most prominent fields of engineering studies with substantial demand for ECE engineers all over the world.</p>
+								<p>Over the years, communication and electronics have crept in our lives like never before. This change in the technological field has ensured a bright path ahead for ECE pursuers. With smartphones in hand and widespread opportunities to communicate, electronics and communication engineering is the next best thing to rule the global market.</p>
+							</div>
+							
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 4 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 300 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 9 Professors</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->             
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> MIT Takyelpat campus is located just adjacent to NH 37 (New Cachar Road) approximately 4 Kms. from the heart of Imphal City. It is about 6 Kms from Imphal International Airport, Tulihal, Imphal.</p>
+						<p>MIT Manipur University Campus is located at Canchipur, Imphal, the capital city of Manipur. The University campus is spread over an area of 287 acres in the historic Canchipur which is the site of the old palace of Manipur “The Langthabal Konung (Palace)” which was established by Maharaja Ghambhir Singh in 1827 AD just after the liberation of Manipur from Burmese (Myanmar) occupation. Maharaja Gambhir Singh took his last breath at Canchipur. Canchipur is located along the National Highway (NH-2) at about 8 km. from the heart of the Imphal City and 12 km. from Imphal International Airport.</p>
+                       
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Admin</a></li>
+                            <li><a href="#">Courses</a></li>
+							<li><a href="#">Facility</a></li>
+							<li><a href="#">Teachers</a></li>
+                            <li><a href="#">Examination</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+               
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
